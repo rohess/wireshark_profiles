@@ -1,0 +1,9 @@
+"Server Hello" tls.handshake.type == 2
+"Screen Sharing Data" ip.host contains mcs
+"GoTo Telemetry" ip.host contains  api-telemetry.servers.getgo.com
+"Video Traffic TCP" ip.host contains  videogw-live
+"Audio Traffic TCP" ip.host contains audiogw-live
+"GoTo Logging" ip.host contains logging.getgo.com
+"TLS Handshake Certificate" tls.handshake.type == 11
+"LMI domains" ip.host contains  "goto-rtc.com" or ip.host contains   "expertcity.com"  or ip.host contains  "getgo.com"
+"TURN" ip.host contains  "turn.goto-rtc.com" or ip.host contains "turn-live.k8s.goto-rtc.com"
